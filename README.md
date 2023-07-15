@@ -2,7 +2,7 @@
 
 Astroship Pro is a Pro version of Popular Free Astroship Starter Template which was made for startups, marketing websites, landing pages & blog. Built with Astro & TailwindCSS.
 
-This Free Template is sponsored by [Web3Templates](https://web3templates.com)
+This Pro Template is made by [Web3Templates](https://web3templates.com)
 
 ## Live Demo
 
