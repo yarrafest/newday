@@ -42,14 +42,12 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
                 background="#ffffff"
                 fit="cover"
                 position="center"
-                class="w-full rounded-md rounded transition group-hover:-translate-y-1 group-hover:shadow-xl"
+                class="w-full  rounded transition group-hover:-translate-y-1 group-hover:shadow-xl"
               />
             </div>
 
             <div class="mt-4 text-center">
-              <h2 class="text-lg text-gray-800">
-                {teamMemberEntry.data.name}
-              </h2>
+              <h2 class="text-lg text-gray-800">{teamMemberEntry.data.name}</h2>
               <h3 class="text-sm text-slate-500">
                 {teamMemberEntry.data.title}
               </h3>
