@@ -4,6 +4,7 @@ import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
 import Pricing from "@components/pricing.astro";
 import Faq from "@components/faq.astro";
+import ComparePricing from "@components/compare-pricing.astro";
 
 const pricing = [
   {
@@ -78,6 +79,7 @@ const pricing = [
     <div class="grid md:grid-cols-3 gap-10 mx-auto max-w-screen-lg mt-12">
       {pricing.map((item) => <Pricing plan={item} />)}
     </div>
+    <ComparePricing />
     <Faq />
   </Container>
 </Layout>
