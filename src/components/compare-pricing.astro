@@ -1,5 +1,7 @@
 ---
 import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import { Icon } from "astro-icon";
 
 const features = [
   "Custom Domains",
@@ -28,141 +30,177 @@ const features = [
 const plans = [
   {
     name: "Free",
-    price: 0,
+    price: "$0",
+    color: "gray",
     values: [
       "Single Subdomain",
       "1GB",
       "10",
       "Email Only",
-      "No",
-      "No",
+      "-",
+      "-",
       "Limited",
       "Basic",
       "Limited",
-      "No",
-      "No",
-      "No",
+      "-",
+      "-",
+      "-",
       "Basic",
-      "No",
-      "No",
-      "No",
+      "-",
+      "-",
+      "-",
       "Basic",
-      "No",
+      "-",
       "Limited",
-      "No",
+      "-",
     ],
   },
   {
     name: "Starter",
-    price: 19.99,
+    price: "$49/mo",
+    color: "indigo",
     values: [
       "1 Custom Domain",
       "10GB",
       "100",
       "Email and Chat",
-      "No",
-      "No",
+      "-",
+      "-",
       "Unlimited",
       "Basic",
       "Limited",
-      "No",
-      "No",
-      "No",
+      "-",
+      "-",
+      "-",
       "Basic",
       "Limited",
-      "No",
-      "No",
+      "-",
+      "-",
       "Basic",
-      "No",
+      "-",
       "Limited",
-      "No",
+      "-",
     ],
   },
   {
     name: "Business",
-    price: 49.99,
+    price: "$149/mo",
+    popular: true,
+    color: "orange",
     values: [
       "5 Custom Domains",
       "50GB",
       "500",
       "Email, Chat, and Phone",
-      "Yes",
-      "No",
+      true,
+      "-",
       "Unlimited",
       "Advanced",
       "Limited",
-      "Yes",
-      "Yes",
-      "No",
+      true,
+      true,
+      "-",
       "Advanced",
-      "Yes",
-      "No",
-      "No",
+      true,
+      "-",
+      "-",
       "Advanced",
-      "Yes",
+      true,
       "Unlimited",
-      "Yes",
+      true,
     ],
   },
   {
     name: "Enterprise",
-    price: 99.99,
+    price: "Custom",
+    color: "purple",
     values: [
       "100 Custom Domains",
       "200GB",
       "Unlimited",
       "24/7 Support",
-      "Yes",
-      "Yes",
+      true,
+      true,
       "Unlimited",
       "Advanced",
       "Unlimited",
-      "Yes",
-      "Yes",
-      "Yes",
+      true,
+      true,
+      true,
       "Advanced",
-      "Yes",
-      "Yes",
-      "Yes",
+      true,
+      true,
+      true,
       "Advanced",
-      "Yes",
+      true,
       "Unlimited",
-      "Yes",
+      true,
     ],
   },
 ];
+
+const colors = {
+  indigo: "text-indigo-600",
+  orange: "text-orange-700",
+  purple: "text-purple-600",
+};
 ---
 
 <Container>
+  <div class="mt-16">
+    <h3 class="text-xl lg:text-3xl font-bold lg:tracking-tight">
+      Compare Plans
+    </h3>
+    <p class="mt-1 text-slate-600">
+      Use the table below to compare full features of this product.
+    </p>
+  </div>
+
   {/* Desktop Version */}
-  <div class="mt-24 overflow-x-auto w-full border border-slate-500">
+  <div
+    class="mt-8 overflow-x-auto lg:overflow-visible w-full border border-slate-200 rounded-md">
     <div class="min-w-max">
-      <div class="grid grid-cols-5 gap-4 items-center sticky top-0 bg-white">
-        <div class="font-bold">Plans</div>
-        {
-          plans.map((plan) => (
-            <div class="font-bold">
-              <div>{plan.name}</div>
-              <div>${plan.price}</div>
-            </div>
-          ))
-        }
+      <div
+        class="sticky top-0 py-5 bg-white border-b border-slate-200 rounded-t-md">
+        <div class="grid grid-cols-5 gap-0 items-center bg-white">
+          <div class="text-slate-500 px-5">Compare Plans</div>
+          {
+            plans.map((plan) => (
+              <div class="px-5">
+                <h3 class:list={[colors[plan.color] || "text-neutral-800"]}>
+                  {plan.name}
+                </h3>
+                <div class="text-xl mt-1 lg:text-2xl font-bold text-black">
+                  {plan.price}
+                </div>
+              </div>
+            ))
+          }
+        </div>
       </div>
 
-      <div class="grid grid-cols-5 gap-8 items-center mt-10">
-        <div class="grid gap-5">
+      <div class="grid grid-cols-5 gap-0 items-center">
+        <div class="grid">
           {
             features.map((feature) => (
-              <div class="feature-header">{feature}</div>
+              <div class="border-b font-medium text-sm py-3 px-5">
+                {feature}
+              </div>
             ))
           }
         </div>
 
         {
           plans.map((plan) => (
-            <div class="grid gap-5">
+            <div class="grid gap-0">
               {plan.values.map((value) => (
-                <div>{value}</div>
+                <div class="border-b  text-sm py-3 px-5">
+                  {typeof value === "boolean" ? (
+                    <Icon name="ph:check-circle-fill" class="w-5 h-5" />
+                  ) : (
+                    value
+                  )}
+                </div>
               ))}
             </div>
           ))
