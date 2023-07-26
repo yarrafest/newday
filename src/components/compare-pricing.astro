@@ -1,6 +1,7 @@
 ---
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
+import Link from "@components/ui/link.astro";
 import { Icon } from "astro-icon";
 
 const features = [
@@ -161,7 +162,7 @@ const colors = {
     class="mt-8 overflow-x-auto lg:overflow-visible w-full border border-slate-200 rounded-md">
     <div class="min-w-max">
       <div
-        class="sticky top-0 py-5 bg-white border-b border-slate-200 rounded-t-md">
+        class="sticky top-0 py-6 bg-white border-b border-slate-200 rounded-t-md">
         <div class="grid grid-cols-5 gap-0 items-center bg-white">
           <div class="text-slate-500 px-5">Compare Plans</div>
           {
@@ -173,6 +174,16 @@ const colors = {
                 <div class="text-xl mt-1 lg:text-2xl font-bold text-black">
                   {plan.price}
                 </div>
+
+                <div class="flex mt-3">
+                  <Link
+                    href="#"
+                    block
+                    size="sm"
+                    style={plan.popular ? "primary" : "outline"}>
+                    Get Started
+                  </Link>
+                </div>
               </div>
             ))
           }
@@ -183,7 +194,7 @@ const colors = {
         <div class="grid">
           {
             features.map((feature) => (
-              <div class="border-b font-medium text-sm py-3 px-5">
+              <div class="border-b border-slate-200 font-medium text-sm py-3 px-5 odd:bg-slate-50">
                 {feature}
               </div>
             ))
@@ -194,7 +205,7 @@ const colors = {
           plans.map((plan) => (
             <div class="grid gap-0">
               {plan.values.map((value) => (
-                <div class="border-b  text-sm py-3 px-5">
+                <div class="border-b border-slate-200 odd:bg-slate-50 text-sm py-3 px-5">
                   {typeof value === "boolean" ? (
                     <Icon name="ph:check-circle-fill" class="w-5 h-5" />
                   ) : (
