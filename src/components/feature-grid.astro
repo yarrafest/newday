@@ -1,0 +1,56 @@
+---
+// @ts-ignore
+import { Image } from "@astrojs/image/components";
+import Card from "@components/card.astro";
+import { Icon } from "astro-icon";
+---
+
+<div class="mt-16">
+  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
+    Everything you need to <span class="text-indigo-600">start a website</span>
+  </h2>
+  <p class="text-lg mt-4 text-slate-600">
+    Astro comes batteries included. It takes the best parts of state-of-the-art
+    tools and adds its own innovations.
+  </p>
+</div>
+
+<div class="grid sm:grid-cols-5 mt-16 gap-10">
+  <Card class="col-span-3" color="purple">
+    <div slot="image">
+      <Image
+        src="/src/assets/features/1.png"
+        alt="Astro logo"
+        width="600"
+        class="h-full w-auto"
+        aspectRatio="1/1"
+      />
+    </div>
+    <span slot="title">Next Level Template.</span>
+    <span slot="desc">
+      Astroship is a new kind of website template that integrates your favorite
+      tools and workflows.</span
+    >
+  </Card>
+  <Card class="col-span-2" color="indigo">
+    <div slot="image">
+      <Image
+        src="/src/assets/features/2.png"
+        alt="Astro logo"
+        width="400"
+        aspectRatio="1/1"
+      />
+    </div>
+    <span slot="title">Next Level Template.</span>
+    <span slot="desc">
+      Astroship is a new kind of website template that integrates your favorite
+      tools and workflows.</span
+    >
+  </Card>
+</div>
+
+<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
+  <div>c</div>
+  <div>d</div>
+  <div>e</div>
+</div>
