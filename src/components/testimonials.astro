@@ -64,12 +64,12 @@ const testimonials = [
   <div
     class="relative flex gap-10 overflow-x-hidden motion-reduce:overflow-x-auto motion-reduce:px-5 py-5 group">
     <div
-      class="motion-safe:animate-marquee flex min-w-full shrink-0 items-stretch justify-around gap-10 group-hover:[animation-play-state:paused]">
+      class="motion-safe:animate-marquee flex min-w-full shrink-0 items-stretch justify-around gap-10">
       {testimonials.map((item) => <Review {...item} />)}
     </div>
     <!--  ↓↓ Shadow DOM to make the animation smooth (clone) ↓↓ -->
     <div
-      class="motion-safe:animate-marquee motion-reduce:hidden flex min-w-full shrink-0 items-center justify-around gap-10 group-hover:[animation-play-state:paused]">
+      class="motion-safe:animate-marquee motion-reduce:hidden flex min-w-full shrink-0 items-center justify-around gap-10">
       {testimonials.map((item) => <Review {...item} />)}
     </div>
   </div>
