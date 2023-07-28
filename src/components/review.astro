@@ -1,0 +1,27 @@
+---
+import { Image } from "@astrojs/image/components";
+import Box from "@components/ui/box.astro";
+const { text, title, name, image } = Astro.props;
+---
+
+<Box class="max-w-md w-full flex flex-col justify-between">
+  <!-- <div class="absolute font-serif text-5xl left-2 top-8 text-slate-300 -z-10">
+    “
+  </div> -->
+  <blockquote class="text-xl [text-wrap:balance]">{text}</blockquote>
+  <div class="flex items-center gap-3 mt-10">
+    <div>
+      <Image
+        class="rounded-full"
+        src={image}
+        alt={name}
+        width="50"
+        height="50"
+      />
+    </div>
+    <div>
+      <h2 class="font-medium text-slate-800">{name}</h2>
+      <p class="text-sm text-slate-600">{title}</p>
+    </div>
+  </div>
+</Box>

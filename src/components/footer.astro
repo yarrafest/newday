@@ -45,11 +45,11 @@ const footermenu = {
       path: "#",
     },
     {
-      title: "Request Demo",
+      title: "Guides",
       path: "#",
     },
     {
-      title: "API Documentation",
+      title: "Documentation",
       path: "#",
     },
     {
@@ -60,7 +60,7 @@ const footermenu = {
 };
 ---
 
-<footer class="mt-20 py-14 bg-slate-50 border-t border-slate-100">
+<footer class="mt-20 py-14 bg-slate-100 border-t border-slate-100">
   <Container>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
       <div class="sm:col-span-2 md:col-span-3 lg:col-span-2">
@@ -102,13 +102,13 @@ const footermenu = {
         </div>
       </div>
       <div>
-        <h3 class="font-medium text-slate-800">Company</h3>
+        <h3 class="font-medium text-sm text-slate-800">Company</h3>
         <div class="flex flex-col mt-3">
           {
             footermenu.company.map((item) => (
               <a
                 href={item.path || "#"}
-                class="py-1.5 text-sm text-slate-600 hover:text-indigo-600">
+                class="py-1.5 text-sm text-slate-500 hover:text-indigo-600">
                 {item.title}
               </a>
             ))
@@ -116,13 +116,13 @@ const footermenu = {
         </div>
       </div>
       <div>
-        <h3 class="font-medium text-slate-800">Product</h3>
+        <h3 class="font-medium text-sm text-slate-800">Product</h3>
         <div class="flex flex-col mt-3">
           {
             footermenu.product.map((item) => (
               <a
                 href={item.path || "#"}
-                class="py-1.5 text-sm text-slate-600 hover:text-indigo-600">
+                class="py-1.5 text-sm text-slate-500 hover:text-indigo-600">
                 {item.title}
               </a>
             ))
@@ -130,13 +130,13 @@ const footermenu = {
         </div>
       </div>
       <div>
-        <h3 class="font-medium text-slate-800">Resources</h3>
+        <h3 class="font-medium text-sm text-slate-800">Resources</h3>
         <div class="flex flex-col mt-3">
           {
             footermenu.resources.map((item) => (
               <a
                 href={item.path || "#"}
-                class="py-1.5 text-sm text-slate-600 hover:text-indigo-600">
+                class="py-1.5 text-sm text-slate-500 hover:text-indigo-600">
                 {item.title}
               </a>
             ))

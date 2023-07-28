@@ -2,10 +2,9 @@
 // @ts-ignore
 import { Image } from "@astrojs/image/components";
 import Card from "@components/card.astro";
-import { Icon } from "astro-icon";
 ---
 
-<div class="mt-16">
+<div class="mt-24">
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight">
     Everything you need to <span class="text-indigo-600">start a website</span>
   </h2>
@@ -15,33 +14,36 @@ import { Icon } from "astro-icon";
   </p>
 </div>
 
-<div class="grid sm:grid-cols-5 mt-16 gap-10">
-  <Card class="col-span-3" color="purple">
-    <div slot="image">
+<div class="grid md:grid-cols-2 lg:grid-cols-5 mt-16 gap-10">
+  <Card class="lg:col-span-3" color="purple">
+    <Fragment slot="image">
       <Image
         src="/src/assets/features/1.png"
-        alt="Astro logo"
-        width="600"
-        class="h-full w-auto"
-        aspectRatio="1/1"
+        alt="Feature image"
+        width="1280"
+        height="800"
+        class="h-full w-full object-contain"
       />
-    </div>
-    <span slot="title">Next Level Template.</span>
+    </Fragment>
+    <span slot="badge">Astroship</span>
+    <span slot="title">Responsive Template</span>
     <span slot="desc">
-      Astroship is a new kind of website template that integrates your favorite
-      tools and workflows.</span
-    >
+      Astroship is a creative and modern mobile responsive website template that
+      helps you create any kind of marketing websites or landing pages.
+    </span>
   </Card>
-  <Card class="col-span-2" color="indigo">
-    <div slot="image">
+  <Card class="lg:col-span-2" color="indigo">
+    <Fragment slot="image">
       <Image
         src="/src/assets/features/2.png"
-        alt="Astro logo"
-        width="400"
-        aspectRatio="1/1"
+        alt="Feature image"
+        width="1280"
+        height="800"
+        class="h-full w-full object-contain"
       />
-    </div>
-    <span slot="title">Next Level Template.</span>
+    </Fragment>
+    <span slot="badge">Creative</span>
+    <span slot="title">Next Level Template</span>
     <span slot="desc">
       Astroship is a new kind of website template that integrates your favorite
       tools and workflows.</span
@@ -49,8 +51,55 @@ import { Icon } from "astro-icon";
   </Card>
 </div>
 
-<div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-16">
-  <div>c</div>
-  <div>d</div>
-  <div>e</div>
+<div class="grid md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10">
+  <Card color="indigo" size="sm">
+    <Fragment slot="image">
+      <Image
+        src="/src/assets/features/3.png"
+        alt="Feature image"
+        width="1280"
+        height="800"
+        class="h-full w-full object-contain"
+      />
+    </Fragment>
+    <span slot="badge">Template</span>
+    <span slot="title">Modern Design</span>
+    <span slot="desc">
+      Feeling old? Try this template and be a part of the modern design.</span
+    >
+  </Card>
+
+  <Card color="purple" size="sm">
+    <Fragment slot="image">
+      <Image
+        src="/src/assets/features/2.png"
+        alt="Feature image"
+        width="1280"
+        height="800"
+        class="h-full w-full object-contain"
+      />
+    </Fragment>
+    <span slot="badge">Product</span>
+    <span slot="title">Highlight Features</span>
+    <span slot="desc">
+      You can highlight your features in a trendy grid like this one.</span
+    >
+  </Card>
+
+  <Card size="sm">
+    <Fragment slot="image">
+      <Image
+        src="/src/assets/integrations.svg"
+        alt="Feature image"
+        width="909"
+        height="823"
+        class="h-full w-full object-contain"
+      />
+    </Fragment>
+    <span slot="badge">Webhooks</span>
+    <span slot="title">100+ Integrations</span>
+    <span slot="desc">
+      Astroship can be integrated with hundreds of tools using Zapier.</span
+    >
+  </Card>
 </div>
