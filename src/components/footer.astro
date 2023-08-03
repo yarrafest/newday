@@ -2,6 +2,8 @@
 import Container from "@components/container.astro";
 import { Icon } from "astro-icon";
 
+const { margin } = Astro.props;
+
 const footermenu = {
   company: [
     {
@@ -60,7 +62,11 @@ const footermenu = {
 };
 ---
 
-<footer class="mt-20 py-14 bg-slate-100 border-t border-slate-100">
+<footer
+  class:list={[
+    "py-14 bg-slate-100 border-t border-slate-100",
+    margin && "mt-10",
+  ]}>
   <Container>
     <div class="grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8">
       <div class="sm:col-span-2 md:col-span-3 lg:col-span-2">

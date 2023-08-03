@@ -1,8 +1,11 @@
 ---
 // @ts-ignore
-import { Image } from "@astrojs/image/components";
+import { Image } from "astro:assets";
 import Card from "@components/card.astro";
 import IntegrationImg from "../assets/integrations.svg?url";
+import FeatureImgOne from "../assets/features/2.png";
+import FeatureImgTwo from "../assets/features/2.png";
+import FeatureImgThree from "../assets/features/3.png";
 ---
 
 <div class="mt-24">
@@ -19,7 +22,7 @@ import IntegrationImg from "../assets/integrations.svg?url";
   <Card class="lg:col-span-3" color="purple">
     <Fragment slot="image">
       <Image
-        src={import("../assets/features/1.png")}
+        src={FeatureImgOne}
         alt="Feature image"
         width="1280"
         height="800"
@@ -36,7 +39,7 @@ import IntegrationImg from "../assets/integrations.svg?url";
   <Card class="lg:col-span-2" color="indigo">
     <Fragment slot="image">
       <Image
-        src={import("../assets/features/2.png")}
+        src={FeatureImgTwo}
         alt="Feature image"
         width="1280"
         height="800"
@@ -56,7 +59,7 @@ import IntegrationImg from "../assets/integrations.svg?url";
   <Card color="indigo" size="sm">
     <Fragment slot="image">
       <Image
-        src={import("../assets/features/3.png")}
+        src={FeatureImgThree}
         alt="Feature image"
         width="1280"
         height="800"
@@ -73,7 +76,7 @@ import IntegrationImg from "../assets/integrations.svg?url";
   <Card color="purple" size="sm">
     <Fragment slot="image">
       <Image
-        src={import("../assets/features/2.png")}
+        src={FeatureImgTwo}
         alt="Feature image"
         width="1280"
         height="800"
