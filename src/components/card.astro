@@ -25,7 +25,13 @@ const colors = {
     <slot name="image" />
   </div>
   <div class="mt-2">
-    <Badge color={color}><slot name="badge" /></Badge>
+    {
+      Astro.slots.has("badge") && (
+        <Badge color={color}>
+          <slot name="badge" />
+        </Badge>
+      )
+    }
     <h3 class="text-xl lg:text-2xl font-medium mt-2"><slot name="title" /></h3>
     <p class="text-slate-600 mt-2 [text-wrap:balance]"><slot name="desc" /></p>
   </div>
