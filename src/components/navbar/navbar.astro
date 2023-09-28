@@ -3,17 +3,18 @@ import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { Astronav, MenuItems, MenuIcon } from "astro-navbar";
-// @ts-ignore
-import { Icon } from "astro-icon";
 
 const menuitems = [
   {
     title: "Pages",
     path: "#",
     children: [
-      { title: "Features", path: "/feature" },
+      { title: "Features", path: "/features" },
       { title: "Integrations", path: "/integrations" },
-      { title: "Blog Details", path: "#" },
+      {
+        title: "Blog Details",
+        path: "/blog/essential-data-structures-algorithms",
+      },
       { title: "404 Page", path: "/404" },
     ],
   },
