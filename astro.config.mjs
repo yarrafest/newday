@@ -6,10 +6,6 @@ import sitemap from "@astrojs/sitemap";
 // https://astro.build/config
 export default defineConfig({
   site: "https://astroship-pro.web3templates.com",
-  experimental: {
-    assets: true,
-    viewTransitions: true,
-  },
   image: {
     service: sharpImageService(),
   },

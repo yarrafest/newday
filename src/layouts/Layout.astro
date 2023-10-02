@@ -1,8 +1,10 @@
 ---
 // import { ViewTransitions } from "astro:transitions";
 import { SEO } from "astro-seo";
+import { ViewTransitions } from "astro:transitions";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
+
 import "@fontsource-variable/inter/index.css";
 
 export interface Props {
@@ -61,7 +63,7 @@ const makeTitle = title
         content-visibility: auto;
       }
     </style>
-    <!-- <ViewTransitions /> -->
+    <ViewTransitions />
   </head>
   <body>
     <Navbar />
