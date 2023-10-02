@@ -6,35 +6,34 @@ This Pro Template is made by [Web3Templates](https://web3templates.com)
 
 ## Live Demo
 
-### [https://astroship-pro.web3templates.com/](https://astroship-pro.web3templates.com/)
+### [Astroship Pro Live Demo](https://astroship-pro.web3templates.com/)
 
-### [Download Astroship Pro Version](https://web3templates.com/templates/astroship-starter-website-template-for-astro)
+### [Buy Astroship Pro Template](https://web3templates.com/templates/astroship-pro-astro-saas-website-template)
 
-### [Free Version on Github](https://github.com/surjithctly/astroship)
+#### [Get Free Version](https://web3templates.com/templates/astroship-starter-website-template-for-astro)
 
 ## Preview
 
-![image](https://user-images.githubusercontent.com/1884712/200831799-10ef2456-a02e-4068-b580-4b5326f0b33b.png)
+![astroship-pro-preview](https://github.com/web3templates/astroship-pro/assets/1884712/17ca044c-c8ce-4a0a-8780-f078c2ef0cc4)
 
-### Pagespeed Score
-
-[![pagespeed](https://user-images.githubusercontent.com/1884712/210250214-7aa98167-7993-4b90-8138-326b8fa0c223.png)](https://pagespeed.web.dev/report?url=https%3A%2F%2Fastroship.web3templates.com%2F)
 
 ## Installation
 
-If you are reading this on github, you can click on the "Use this template" button above to create a new repository from astroship to your account. Then you can do a `git clone` to clone it to your local system.
+If you are already have github access, you can click on the "Fork" button above to create a new repository from astroship to your account. Then you can do a `git clone` to clone it to your local system.
 
-Alternatively, you can clone the project directly from this repo to your local system.
+Alternatively, you can clone the project directly from the github repo to your local system. make sure you have github repo access. Send an email to hello@web3templates.com to get github repo access. 
 
 ### 1. Clone the repo
 
 ```bash
-git clone https://github.com/surjithctly/astroship.git myProjectName
+git clone https://github.com/web3templates/astroship-pro.git myProjectName
 # or
-git clone https://github.com/surjithctly/astroship.git .
+git clone https://github.com/web3templates/astroship-pro.git .
 ```
 
 The `.` will clone it to the current directory so make sure you are inside your project folder first.
+
+> Note: If you are reading this on a downloaded zip file after purchase, just skip this step and start installing npm from the next step.
 
 ### 2. Install Dependencies
 
@@ -107,7 +106,7 @@ TailwindCSS is already configured in this repo, so you can start using it withou
 
 ## Credits
 
-[Hero Illustration](https://www.figma.com/community/file/1108400791662599811) by [Streamline](https://www.streamlinehq.com/)
+[Unsplash](https://unsplash.com)
 
 ## 👀 Want to learn more?
 
