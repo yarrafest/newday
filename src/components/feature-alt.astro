@@ -5,9 +5,15 @@ import FeatureImg1 from "../assets/features/6.png";
 import FeatureImg2 from "../assets/features/2.png";
 import { Icon } from "astro-icon";
 import Link from "@components/ui/link.astro";
+
+const { nomargin } = Astro.props;
 ---
 
-<div class="mt-24 max-w-4xl mx-auto flex flex-col items-center justify-center">
+<div
+  class:list={[
+    "max-w-4xl mx-auto flex flex-col items-center justify-center",
+    !nomargin && "mt-24",
+  ]}>
   <Badge color="purple">TWO-COL FEATURES</Badge>
   <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-4 text-center">
     Supercharge Your Workflows
