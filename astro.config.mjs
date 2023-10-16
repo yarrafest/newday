@@ -8,6 +8,7 @@ export default defineConfig({
   site: "https://astroship-pro.web3templates.com",
   image: {
     service: sharpImageService(),
+    domains: ["source.unsplash.com", "images.unsplash.com"],
   },
   integrations: [tailwind(), mdx(), sitemap()],
 });

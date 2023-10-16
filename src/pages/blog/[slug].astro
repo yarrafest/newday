@@ -2,7 +2,7 @@
 import { getCollection } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 
 // Generate a new path for every collection entry
 export async function getStaticPaths() {
@@ -51,7 +51,8 @@ const { Content } = await entry.render();
     </div>
 
     <div class="mx-auto max-w-4xl">
-      <Image
+      <Picture
+        formats={["avif", "webp"]}
         src={entry.data.image.src}
         alt="Feature image"
         width="1280"

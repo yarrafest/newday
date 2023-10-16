@@ -1,5 +1,5 @@
 ---
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import heroImage from "../assets/hero-screenshot.png";
 import Link from "@components/ui/link.astro";
 import Container from "@components/container.astro";
@@ -46,10 +46,10 @@ import Container from "@components/container.astro";
         </div>
       </div>
       <div class="py-3 lg:col-span-3 lg:-mr-44">
-        <Image
+        <Picture
           src={heroImage}
           alt="Astronaut in the air"
-          quality={100}
+          formats={["avif", "webp"]}
           loading="eager"
         />
       </div>

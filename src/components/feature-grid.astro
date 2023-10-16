@@ -1,6 +1,6 @@
 ---
 // @ts-ignore
-import { Image } from "astro:assets";
+import { Picture, Image } from "astro:assets";
 import Card from "@components/card.astro";
 import IntegrationImg from "../assets/integrations.svg?url";
 import FeatureImgOne from "../assets/features/2.png";
@@ -21,11 +21,10 @@ import FeatureImgThree from "../assets/features/3.png";
 <div class="grid md:grid-cols-2 lg:grid-cols-5 mt-16 gap-10">
   <Card class="lg:col-span-3" color="purple">
     <Fragment slot="image">
-      <Image
+      <Picture
         src={FeatureImgOne}
         alt="Feature image"
-        width="1280"
-        height="800"
+        formats={["avif", "webp"]}
         class="h-full w-full object-contain"
       />
     </Fragment>
@@ -38,11 +37,10 @@ import FeatureImgThree from "../assets/features/3.png";
   </Card>
   <Card class="lg:col-span-2" color="indigo">
     <Fragment slot="image">
-      <Image
+      <Picture
         src={FeatureImgTwo}
         alt="Feature image"
-        width="1280"
-        height="800"
+        formats={["avif", "webp"]}
         class="h-full w-full object-contain"
       />
     </Fragment>
@@ -58,11 +56,10 @@ import FeatureImgThree from "../assets/features/3.png";
 <div class="grid md:grid-cols-2 lg:grid-cols-3 mt-10 gap-10">
   <Card color="indigo" size="sm">
     <Fragment slot="image">
-      <Image
+      <Picture
         src={FeatureImgThree}
         alt="Feature image"
-        width="1280"
-        height="800"
+        formats={["avif", "webp"]}
         class="h-full w-full object-contain"
       />
     </Fragment>
@@ -75,11 +72,10 @@ import FeatureImgThree from "../assets/features/3.png";
 
   <Card color="purple" size="sm">
     <Fragment slot="image">
-      <Image
+      <Picture
         src={FeatureImgTwo}
         alt="Feature image"
-        width="1280"
-        height="800"
+        formats={["avif", "webp"]}
         class="h-full w-full object-contain"
       />
     </Fragment>
@@ -92,6 +88,7 @@ import FeatureImgThree from "../assets/features/3.png";
 
   <Card size="sm">
     <Fragment slot="image">
+      <!-- // svg image. cannot use <picture/> as of now -->
       <Image
         src={IntegrationImg}
         alt="Feature image"

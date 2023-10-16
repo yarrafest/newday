@@ -1,6 +1,6 @@
 ---
 import Badge from "@components/ui/badge.astro";
-import { Image } from "astro:assets";
+import { Picture } from "astro:assets";
 import FeatureImg1 from "../assets/features/6.png";
 import FeatureImg2 from "../assets/features/2.png";
 import { Icon } from "astro-icon";
@@ -28,7 +28,7 @@ const { nomargin } = Astro.props;
 
 <div class="grid md:grid-cols-2 py-10">
   <div class="grid place-items-center">
-    <Image src={FeatureImg1} alt="Feature Image" />
+    <Picture src={FeatureImg1} alt="Feature Image" formats={["avif", "webp"]} />
   </div>
 
   <div class="grid place-items-center">
@@ -89,7 +89,7 @@ const { nomargin } = Astro.props;
 
 <div class="grid md:grid-cols-2 py-10">
   <div class="grid place-items-center pb-10 md:pb-0 md:order-2">
-    <Image src={FeatureImg2} alt="Feature Image" />
+    <Picture src={FeatureImg2} alt="Feature Image" formats={["avif", "webp"]} />
   </div>
 
   <div class="grid place-items-center">
