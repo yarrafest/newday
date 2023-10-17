@@ -28,7 +28,12 @@ const { nomargin } = Astro.props;
 
 <div class="grid md:grid-cols-2 py-10">
   <div class="grid place-items-center">
-    <Picture src={FeatureImg1} alt="Feature Image" formats={["avif", "webp"]} />
+    <Picture
+      src={FeatureImg1}
+      alt="Feature Image"
+      formats={["avif", "webp"]}
+      loading="lazy"
+    />
   </div>
 
   <div class="grid place-items-center">
@@ -89,7 +94,12 @@ const { nomargin } = Astro.props;
 
 <div class="grid md:grid-cols-2 py-10">
   <div class="grid place-items-center pb-10 md:pb-0 md:order-2">
-    <Picture src={FeatureImg2} alt="Feature Image" formats={["avif", "webp"]} />
+    <Picture
+      src={FeatureImg2}
+      alt="Feature Image"
+      formats={["avif", "webp"]}
+      loading="lazy"
+    />
   </div>
 
   <div class="grid place-items-center">
