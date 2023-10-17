@@ -1,5 +1,5 @@
 ---
-import { Picture } from "astro:assets";
+import { Image, Picture } from "astro:assets";
 import heroImage from "../assets/hero-screenshot.png";
 import Link from "@components/ui/link.astro";
 import Container from "@components/container.astro";
@@ -50,7 +50,10 @@ import Container from "@components/container.astro";
           src={heroImage}
           alt="Astronaut in the air"
           formats={["avif", "webp"]}
+          sizes="(max-width: 1024px) 100vw, 50vw"
+          widths={[240, 540, 720, heroImage.width]}
           loading="eager"
+          fetchpriority="high"
         />
       </div>
     </main>
