@@ -103,6 +103,10 @@ Any static assets, like images, can be placed in the `public/` directory.
 
 TailwindCSS is already configured in this repo, so you can start using it without any installation.
 
+## Versions
+
+Current version: v2.0.0
+
 ## Credits
 
 [Unsplash](https://unsplash.com)
