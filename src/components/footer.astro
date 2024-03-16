@@ -2,6 +2,8 @@
 import Container from "@components/container.astro";
 import { Icon } from "astro-icon/components";
 import Cta from "@components/cta.astro";
+import { Image } from "astro:assets";
+import LogoImage from "../assets/yarraville-festival-logo.png";
 
 const { margin } = Astro.props;
 
@@ -72,7 +74,12 @@ const footermenu = {
   <Container>
     <div class="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
       <div class="sm:col-span-2 md:col-span-3 lg:col-span-2">
-        <a href="/" class="flex items-center text-lg"
+        <a
+          href="/"
+          class="focus-visible:shadow-outline-indigo -ml-2 flex items-center rounded-full px-2 text-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2">
+          <Image src={LogoImage} width="150" alt="Yarraville Festival logo." />
+        </a>
+        <!-- <a href="/" class="flex items-center text-lg"
           ><span class="font-bold text-indigo-600">Yarraville </span><span
             class="text-slate-600">Festival</span
           >
@@ -80,12 +87,20 @@ const footermenu = {
             class="ml-1 mt-0.5 rounded-md bg-gray-200 px-2 py-1 text-[10px] font-bold uppercase leading-none text-slate-700"
             >2024</span
           >
-        </a>
+        </a> -->
         <p class="mt-4 max-w-xs text-sm text-slate-700">
           A renowned Inner West Community festival, celebrated for community
           participation and a unique village atmosphere
         </p>
         <div class="mt-4 flex items-center gap-3">
+          <a
+            href="https://www.instagram.com/yarravillefestival/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex h-6 w-6 items-center justify-center rounded bg-slate-200 text-slate-500 hover:bg-slate-300">
+            <Icon name="bx:bxl-instagram" class="h-4 w-4" />
+            <span class="sr-only">Instagam</span></a
+          >
           <!-- <a
             href="https://twitter.com/surjithctly"
             target="_blank"
@@ -95,7 +110,7 @@ const footermenu = {
             <span class="sr-only">Twitter or X</span></a
           > -->
           <a
-            href="https://facebook.com/"
+            href="https://www.facebook.com/YarravilleFestival/"
             target="_blank"
             rel="noopener noreferrer"
             class="inline-flex h-6 w-6 items-center justify-center rounded bg-slate-200 text-slate-500 hover:bg-slate-300">
