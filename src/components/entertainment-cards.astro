@@ -4,6 +4,8 @@ import { Picture, Image } from "astro:assets";
 import Card from "@components/card.astro";
 import IntegrationImg from "../assets/integrations.svg?url";
 import GenEntImgOne from "../assets/images/whats-on/Hopheads_DJ-Keep-Diggin.jpg";
+import GenEntImgTwo from "../assets/images/whats-on/willi_beer-fest.jpeg";
+
 // import GenEntImgTwo from "../assets/images/main-stage/freeza/freeza_ed-moon.jpg";
 // import GenEntImgThree from "../assets/images/main-stage/freeza/freeza_niasha.jpg";
 // import GenEntImgFour from "../assets/images/main-stage/freeza/freeza_tebir.jpg";
@@ -24,6 +26,27 @@ import GenEntImgOne from "../assets/images/whats-on/Hopheads_DJ-Keep-Diggin.jpg"
     <span slot="title">DJ Keep Diggin’</span>
     <span slot="desc">
       Playing funk, disco, house, pop at Hopheads on Anderson St from 11AM - 4PM
+    </span>
+  </Card>
+
+  <Card color="indigo" size="sm">
+    <Fragment slot="image">
+      <Picture
+        src={GenEntImgTwo}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="lazy"
+      />
+    </Fragment>
+    <span slot="badge">Anderson St</span>
+    <span slot="title">willybeerfest.com.au</span>
+    <span slot="desc">
+      This year we partner with WilliBeerFest to bring you a delightful craft
+      beer experience featuring @threegreensbrewing @cavalierbrewing
+      @drinksubtletea @bellarineestate in our new Hospitality Zone. DJs and food
+      options add to the good vibes at the corner of Woods and Murray St this
+      Sunday March 17 2024.
     </span>
   </Card>
 
