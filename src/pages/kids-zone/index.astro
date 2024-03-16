@@ -1,6 +1,6 @@
 ---
 // import { getCollection } from "astro:content";
-// import { Picture } from "astro:assets";
+import { Picture } from "astro:assets";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/container.astro";
 import Sectionhead from "@components/sectionhead.astro";
@@ -9,6 +9,7 @@ import Sectionhead from "@components/sectionhead.astro";
 // import Logos from "@components/logos.astro";
 import { Icon } from "astro-icon/components";
 // import Cta from "@components/cta.astro";
+import myImage from "../../assets/images/kids-zone.jpg";
 ---
 
 <Layout title="About" footerMargin={false}>
@@ -18,7 +19,15 @@ import { Icon } from "astro-icon/components";
       <Fragment slot="title">Kids Zone</Fragment>
       <Fragment slot="desc">
         A new initative for 2024 is the Kids Zone situated on Ballarat St.
+        Activities, performers and market stalls for kids of all ages.
       </Fragment>
     </Sectionhead>
+
+    <Picture
+      src={myImage}
+      alt="Yarraville Festival Kids Zone"
+      src={myImage}
+      formats={["avif", "webp"]}
+    />
   </Container>
 </Layout>
