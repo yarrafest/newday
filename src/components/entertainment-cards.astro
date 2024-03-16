@@ -5,6 +5,7 @@ import Card from "@components/card.astro";
 import IntegrationImg from "../assets/integrations.svg?url";
 import GenEntImgOne from "../assets/images/whats-on/Hopheads_DJ-Keep-Diggin.jpg";
 import GenEntImgTwo from "../assets/images/whats-on/willi_beer-fest.jpeg";
+import GenEntImgTwo from "../assets/images/hospitality-zone/yarraville-festival_hosp-zone-dj.png";
 
 // import GenEntImgTwo from "../assets/images/main-stage/freeza/freeza_ed-moon.jpg";
 // import GenEntImgThree from "../assets/images/main-stage/freeza/freeza_niasha.jpg";
@@ -47,6 +48,22 @@ import GenEntImgTwo from "../assets/images/whats-on/willi_beer-fest.jpeg";
       @drinksubtletea @bellarineestate in our new Hospitality Zone. DJs and food
       options add to the good vibes at the corner of Woods and Murray St this
       Sunday March 17 2024.
+    </span>
+  </Card>
+
+    <Card color="indigo" size="sm">
+    <Fragment slot="image">
+      <Picture
+        src={GenEntImgThree}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="lazy"
+      />
+    </Fragment>
+    <span slot="badge">Woods St</span>
+    <span slot="title">SUper Chill DJs</span>
+    <span slot="desc">Nifty, Sikander abnd friends deliver a 7 hour epic hybrid set of musicians and DJs. Not to be missed!!!
     </span>
   </Card>
 
