@@ -3,6 +3,8 @@ import Container from "@components/container.astro";
 import Link from "@components/ui/link.astro";
 import Dropdown from "./dropdown.astro";
 import { StickyHeader, Astronav, MenuItems, MenuIcon } from "astro-navbar";
+import { Image } from "astro:assets";
+import LogoImage from "../../assets/yarraville-festival-logo.png";
 
 const menuitems = [
   {
@@ -70,6 +72,15 @@ const menuitems = [
         <div class="flex w-full items-center justify-between lg:w-auto">
           <a
             href="/"
+            class="focus-visible:shadow-outline-indigo -ml-2 flex items-center rounded-full px-2 text-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2">
+            <Image
+              src={LogoImage}
+              width="150"
+              alt="Yarraville Festival logo."
+            />
+          </a>
+          <!-- <a
+            href="/"
             class="focus-visible:shadow-outline-indigo -ml-2 flex items-center rounded-full px-2 text-lg transition focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-indigo-500 focus-visible:ring-offset-2"
             ><span class="font-bold text-indigo-600">Yarraville</span><span
               class="text-slate-600">Festival</span
@@ -78,7 +89,7 @@ const menuitems = [
               class="ml-1 mt-0.5 rounded-md bg-gray-200 px-2 py-1 text-[10px] font-bold uppercase leading-none text-slate-700"
               >2024</span
             >
-          </a>
+          </a> -->
           <div class="block lg:hidden">
             <MenuIcon class="h-4 w-4 text-gray-800" />
           </div>
