@@ -1,0 +1,71 @@
+---
+// @ts-ignore
+import { Picture, Image } from "astro:assets";
+import Card from "@components/card.astro";
+import IntegrationImg from "../assets/integrations.svg?url";
+import GenEntImgOne from "../assets/images/whats-on/Hopheads_DJ-Keep-Diggin.jpg";
+// import GenEntImgTwo from "../assets/images/main-stage/freeza/freeza_ed-moon.jpg";
+// import GenEntImgThree from "../assets/images/main-stage/freeza/freeza_niasha.jpg";
+// import GenEntImgFour from "../assets/images/main-stage/freeza/freeza_tebir.jpg";
+---
+
+<div class="mt-10 grid gap-10 md:grid-cols-1 lg:grid-cols-2">
+  <Card color="indigo" size="sm">
+    <Fragment slot="image">
+      <Picture
+        src={GenEntImgOne}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="lazy"
+      />
+    </Fragment>
+    <span slot="badge">Anderson St</span>
+    <span slot="title">DJ Keep Diggin’</span>
+    <span slot="desc">
+      Playing funk, disco, house, pop at Hopheads on Anderson St from 11AM - 4PM
+    </span>
+  </Card>
+
+  <!-- <Card color="indigo" size="sm">
+    <Fragment slot="image">
+      <Picture
+        src={FreezaImgThree}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="lazy"
+      />
+    </Fragment>
+    <span slot="badge">3:15 - 4:00PM</span>
+    <span slot="title">Niasha </span>
+     <span slot="desc">
+      Nikodimos is a multi-instrumentalist, producer, composer and song-writer
+      who lives and breathes music. Nikodimos’ technicoloured essence is
+      unmistakable the moment he touches sound. Will be joined by the Free
+      Speakers, Ryo Montgomery (Izy) & Kuzco plus a guest or two may join the
+      band as well</span>
+  </Card> -->
+
+  <!-- <Card color="purple" size="sm">
+    <Fragment slot="image">
+      <Picture
+        src={FreezaImgFour}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="lazy"
+      />
+    </Fragment>
+    <span slot="badge">12 - 12:30PM</span>
+    <span slot="title">Tebir</span>
+<span slot="desc">
+      As a singer/song-writer, Annaliese Rose has acquired a charisma and
+      writing style well beyond her years. Annaliese released her EP 'Whole' in
+      July of 2019. Following the success of her debut EP 'Whole', Annaliese
+      released her anticipated second EP, 'More of a Monument Than Ever Before'.
+      This sound is somehow sadder than her prior work, yet still comforting and
+      familiar to her audience.
+    </span>
+  </Card> -->
+</div>

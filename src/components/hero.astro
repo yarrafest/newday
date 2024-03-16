@@ -1,51 +1,37 @@
 ---
 import { Image, Picture } from "astro:assets";
-import heroImage from "../assets/hero-screenshot.png";
+import heroImage from "../assets/images/hero_1.png";
+import heroImage2 from "../assets/images/Yarraville-Festival_hero2.png";
 import Link from "@components/ui/link.astro";
 import Container from "@components/container.astro";
 ---
 
+<!-- <div class="overflow-x-clip">
+  <Container>
+    <div class="py-3 lg:col-span-3 lg:-mr-44">
+      <Picture
+        src={heroImage2}
+        alt="2024 Yarraville Festival"
+        formats={["avif", "webp"]}
+        sizes="(max-width: 1024px) 100vw, 50vw"
+        widths={[240, 540, 720, heroImage2.width]}
+        loading="eager"
+        fetchpriority="high"
+      />
+    </div>
+  </Container>
+</div> -->
 <div class="overflow-x-clip">
   <Container>
-    <main class="grid lg:grid-cols-5 place-items-center relative">
+    <main class="relative grid place-items-center lg:grid-cols-5">
       <div
-        class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial from-indigo-200 right-0 top-0">
+        class="bg-gradient-radial absolute right-0 top-0 -z-10 h-96 w-96 from-indigo-200 blur-2xl">
       </div>
       <div
-        class="absolute w-96 h-96 blur-2xl -z-10 bg-gradient-radial from-purple-200 right-56 top-10">
+        class="bg-gradient-radial absolute right-56 top-10 -z-10 h-96 w-96 from-purple-200 blur-2xl">
       </div>
 
-      <div class="max-w-sm md:max-w-max lg:col-span-2">
-        <h1
-          class="text-3xl lg:text-4xl xl:text-6xl font-bold lg:tracking-tight xl:tracking-tighter [text-wrap:balance] text-center lg:text-start">
-          Create websites with Astroship™
-        </h1>
-        <p
-          class="text-lg mt-4 max-w-lg text-slate-600 [text-wrap:balance] text-center lg:text-start">
-          Pro version of popular Astroship starter template made for startups.
-          Built with Astro and Tailwind CSS.
-        </p>
-        <div
-          class="mt-6 flex flex-col sm:flex-row sm:justify-center lg:justify-start gap-3">
-          <Link
-            href="https://web3templates.com/templates/astroship-pro-astro-saas-website-template"
-            target="_blank"
-            class="flex gap-1 items-center justify-center"
-            rel="noopener">
-            Buy Template — $49
-          </Link>
-          <Link
-            size="lg"
-            style="outline"
-            rel="noopener"
-            href="https://github.com/surjithctly/astroship"
-            class="flex gap-1 items-center justify-center"
-            target="_blank">
-            Free Version
-          </Link>
-        </div>
-      </div>
-      <div class="py-3 lg:col-span-3 lg:-mr-44">
+      <div class="py-3 lg:col-span-3">
         <Picture
           src={heroImage}
           alt="Astronaut in the air"
@@ -55,6 +41,37 @@ import Container from "@components/container.astro";
           loading="eager"
           fetchpriority="high"
         />
+      </div>
+
+      <div class="ml-5 max-w-sm md:max-w-max lg:col-span-2">
+        <h1
+          class="text-center text-3xl font-bold [text-wrap:balance] lg:text-start lg:text-4xl lg:tracking-tight xl:text-6xl xl:tracking-tighter">
+          Yarraville Village - Sunday March 17 2024
+        </h1>
+        <p
+          class="mt-4 max-w-lg text-center text-lg text-slate-600 [text-wrap:balance] lg:text-start">
+          Melbourne's longest running (and arguably most loved by locals) street
+          festival. Now new and improved!
+        </p>
+        <div
+          class="mt-6 flex flex-col gap-3 sm:flex-row sm:justify-center lg:justify-start">
+          <Link
+            href="https://fb.me/e/4de3EjmCB"
+            target="_blank"
+            class="flex items-center justify-center gap-1"
+            rel="noopener">
+            Facebook Event
+          </Link>
+          <Link
+            size="lg"
+            style="outline"
+            rel="noopener"
+            href="https://www.instagram.com/yarravillefestival/"
+            class="flex items-center justify-center gap-1"
+            target="_blank">
+            Instagram Profile
+          </Link>
+        </div>
       </div>
     </main>
   </Container>

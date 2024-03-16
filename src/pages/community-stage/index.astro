@@ -1,0 +1,38 @@
+---
+// import { getCollection } from "astro:content";
+// import { Picture } from "astro:assets";
+import { Picture, Image } from "astro:assets";
+import Card from "@components/card.astro";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+// import Link from "@components/ui/link.astro";
+// import EmployeeImg from "../assets/employee.jpg";
+// import Logos from "@components/logos.astro";
+import { Icon } from "astro-icon/components";
+// import Cta from "@components/cta.astro";
+import Card from "@components/card.astro";
+import CommSched from "../assets/images/community-stage/community-stage-schedule.jpg";
+---
+
+<Layout title="About" footerMargin={false}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="badge">What's on!</Fragment>
+      <Fragment slot="title">Community Stage</Fragment>
+      <Fragment slot="desc">
+        The Community Stage is located in the IGA Carpark down the corner of
+        Anderson and Willis. A place to showcase local dance schools, choirs,
+        orchestras and more. Please note, there is no payment for acts on the
+        Community Stage.
+        <Picture
+          src={CommSched}
+          alt="Community Stage Schedule"
+          formats={["avif", "webp"]}
+          class="h-full w-full object-contain"
+          loading="lazy"
+        />
+      </Fragment>
+    </Sectionhead>
+  </Container>
+</Layout>

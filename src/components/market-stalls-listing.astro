@@ -1,0 +1,23 @@
+---
+import { Picture, Image } from "astro:assets";
+import Card from "@components/card.astro";
+
+interface Props {
+  busname: string;
+  category: string;
+  description: string;
+  link: string;
+  imgSrc: string;
+}
+
+const { busname, category, description, link, imgSrc } = Astro.props;
+---
+
+<li class="social-card">
+  <h3 class="mt-4 text-2xl font-medium [text-wrap:balance]">
+    {busname}
+  </h3>
+  <p>{description}</p>
+  <p>{category}</p>
+  <a href={link} target="_blank">Link</a>
+</li>

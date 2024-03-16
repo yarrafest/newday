@@ -1,0 +1,40 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import { Picture, Image } from "astro:assets";
+// import { Image } from "@astrojs/image/components";
+import Listings from "./market-stalls-listing.astro";
+// import person from "../assets/person.svg";
+import entertainmentData from "../data/entertainment.json";
+---
+
+<Layout title="Food and Beverage" footerMargin={false}>
+<Container class="mt-16">
+  <Sectionhead>
+    <Fragment slot="badge">Stalls</Fragment>
+    <Fragment slot="title">Food and Beverage Stalls and Trucks</Fragment>
+    <Fragment slot="desc">
+Let's eat!!!
+    </Fragment>
+  </Sectionhead>
+
+<ul class="app-card-list social-link-list">
+  {
+    entertainmentData.map((entertainmentData) => {
+      return <Listings
+        busname={entertainmentData.busname}
+        link={entertainmentData.link}
+        category={entertainmentData.category}
+        description={entertainmentData.description}
+        imgSrc={entertainmentData.imgSrc}
+
+
+        } />;
+    })
+  }
+
+</ul>
+
+</Container>
+</Layout>

@@ -3,7 +3,7 @@ import { ViewTransitions } from "astro:transitions";
 import { SEO } from "astro-seo";
 import Footer from "@components/footer.astro";
 import Navbar from "@components/navbar/navbar.astro";
-
+import Logos from "@components/logos.astro";
 import "@fontsource-variable/inter/index.css";
 
 export interface Props {
@@ -21,8 +21,8 @@ const resolvedImageWithDomain = new URL(
 const { title, footerMargin = true } = Astro.props;
 
 const makeTitle = title
-  ? title + " | " + "Astroship Pro"
-  : "Astroship Pro - SAAS Startup Website Template for Astro";
+  ? title + " | " + "Yarraville Festival 2024"
+  : "Yarraville Festival - Sunday March 17 2024";
 ---
 
 <!doctype html>
@@ -66,6 +66,7 @@ const makeTitle = title
   <body>
     <Navbar />
     <slot />
+    <Logos />
     <Footer margin={footerMargin} />
   </body>
 </html>

@@ -1,0 +1,37 @@
+---
+// import { getCollection } from "astro:content";
+// import { Picture } from "astro:assets";
+import { Picture, Image } from "astro:assets";
+import Card from "@components/card.astro";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+// import Link from "@components/ui/link.astro";
+// import EmployeeImg from "../assets/employee.jpg";
+// import Logos from "@components/logos.astro";
+import { Icon } from "astro-icon/components";
+// import Cta from "@components/cta.astro";
+import Card from "@components/card.astro";
+import CommSched from "../assets/images/community-stage/community-stage-schedule.jpg";
+---
+
+<Layout title="About" footerMargin={false}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="badge">What's on!</Fragment>
+      <Fragment slot="title">Yarraville Village</Fragment>
+      <Fragment slot="desc">
+        The jewel in the inner-west's crown! Yarrvilel Village is a lovey and
+        friendly retail, hospitality and entertinment destination only a few
+        kilometres form from Melbourne's CBD.
+        <Picture
+          src={CommSched}
+          alt="Community Stage Schedule"
+          formats={["avif", "webp"]}
+          class="h-full w-full object-contain"
+          loading="lazy"
+        />
+      </Fragment>
+    </Sectionhead>
+  </Container>
+</Layout>

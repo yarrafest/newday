@@ -1,0 +1,39 @@
+---
+// import { getCollection } from "astro:content";
+// import { Picture } from "astro:assets";
+import Cta from "@components/cta.astro";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+// import Link from "@components/ui/link.astro";
+// import EmployeeImg from "../assets/employee.jpg";
+// import Logos from "@components/logos.astro";
+import { Icon } from "astro-icon/components";
+// import Cta from "@components/cta.astro";
+import { Picture } from "astro:assets";
+import myImage from "../assets/images/volunteer.jpg";
+---
+
+<Layout title="About" footerMargin={false}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="badge">Get Involved</Fragment>
+      <Fragment slot="title">Volunteers required</Fragment>
+      <Fragment slot="desc">
+        The festival is largely run and looked after by volunteers, and the
+        festival could not be what it is without your help. A variety of roles
+        are available, from helping at the information desk, taking photos,
+        manning the artist green rooms to assisting with the bump-in and
+        bump-out, we’d love to have you!
+      </Fragment>
+    </Sectionhead>
+
+    <Picture
+      src={myImage}
+      alt="Yarraville Festival Dog Parade"
+      src={myImage}
+      formats={["avif", "webp"]}
+    />
+  </Container>
+  <!-- <Cta /> -->
+</Layout>

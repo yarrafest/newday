@@ -1,0 +1,88 @@
+---
+// @ts-ignore
+import { Picture, Image } from "astro:assets";
+import Card from "@components/card.astro";
+import IntegrationImg from "../assets/integrations.svg?url";
+import FreezaImgOne from "../assets/images/main-stage/freeza/freeza.jpg";
+import FreezaImgTwo from "../assets/images/main-stage/freeza/freeza_ed-moon.jpg";
+import FreezaImgThree from "../assets/images/main-stage/freeza/freeza_niasha.jpg";
+import FreezaImgFour from "../assets/images/main-stage/freeza/freeza_tebir.jpg";
+---
+
+<!-- <div class="mt-24">
+  <h2 class="text-center text-4xl font-bold lg:text-5xl lg:tracking-tight">
+    Train station car park <span class="text-indigo-600">comes alive!</span>
+  </h2>
+  <p class="mt-4 text-center text-lg text-slate-600">
+    Our Main Stage is now situated behind the Sun Cinema. A great selection of
+    acts selected by Kindred. This year’s Yarraville Festival Main Stage is
+    proudly programmed by Kindred Studios in collaboration with Songlines
+    Aboriginal Music and Freeza Youth Services.
+  </p>
+  <p class="mt-4 text-center text-lg text-slate-600">
+    Music will kick off from 10am with Ed Moon, Chief Tebir and MS NIASHA. A
+    wonderful array of acts curated by Freeza.
+  </p>
+</div> --><!-- x -->
+<div class="mt-10 grid gap-10 md:grid-cols-1 lg:grid-cols-3">
+  <Card color="indigo" size="sm">
+    <Fragment slot="image">
+      <Picture
+        src={FreezaImgTwo}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="lazy"
+      />
+    </Fragment>
+    <span slot="badge">5:20 - 6PM</span>
+    <span slot="title">Ed Moon</span>
+    <!-- <span slot="desc">
+      Iconic Melbourne reggae ensemble Ras Jahknow Band, bring their dynamic,
+      high-energy, positive music to the people with a stage show guaranteed to
+      uplift and inspire with their powerful messages.
+    </span> -->
+  </Card>
+
+  <Card color="indigo" size="sm">
+    <Fragment slot="image">
+      <Picture
+        src={FreezaImgThree}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="lazy"
+      />
+    </Fragment>
+    <span slot="badge">3:15 - 4:00PM</span>
+    <span slot="title">Niasha </span>
+    <!-- <span slot="desc">
+      Nikodimos is a multi-instrumentalist, producer, composer and song-writer
+      who lives and breathes music. Nikodimos’ technicoloured essence is
+      unmistakable the moment he touches sound. Will be joined by the Free
+      Speakers, Ryo Montgomery (Izy) & Kuzco plus a guest or two may join the
+      band as well</span> -->
+  </Card>
+
+  <Card color="purple" size="sm">
+    <Fragment slot="image">
+      <Picture
+        src={FreezaImgFour}
+        alt="Feature image"
+        formats={["avif", "webp"]}
+        class="h-full w-full object-contain"
+        loading="lazy"
+      />
+    </Fragment>
+    <span slot="badge">12 - 12:30PM</span>
+    <span slot="title">Tebir</span>
+    <!-- <span slot="desc">
+      As a singer/song-writer, Annaliese Rose has acquired a charisma and
+      writing style well beyond her years. Annaliese released her EP 'Whole' in
+      July of 2019. Following the success of her debut EP 'Whole', Annaliese
+      released her anticipated second EP, 'More of a Monument Than Ever Before'.
+      This sound is somehow sadder than her prior work, yet still comforting and
+      familiar to her audience.
+    </span> -->
+  </Card>
+</div>

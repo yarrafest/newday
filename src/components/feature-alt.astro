@@ -11,22 +11,27 @@ const { nomargin } = Astro.props;
 
 <div
   class:list={[
-    "max-w-4xl mx-auto flex flex-col items-center justify-center",
+    "mx-auto flex max-w-4xl flex-col items-center justify-center",
     !nomargin && "mt-24",
   ]}>
-  <Badge color="purple">TWO-COL FEATURES</Badge>
-  <h2 class="text-4xl lg:text-5xl font-bold lg:tracking-tight mt-4 text-center">
-    Supercharge Your Workflows
+  <!-- <Badge color="purple">TWO-COL FEATURES</Badge> -->
+  <h2 class="mt-4 text-center text-4xl font-bold lg:text-5xl lg:tracking-tight">
+    Uniting the Inner West community
   </h2>
-  <p class="text-lg mt-4 text-slate-600 text-center [text-wrap:pretty]">
-    Unlock your team's true potential with our state-of-the-art SaaS platform.
-    From intelligent task management to real-time collaboration and top-notch
-    data security, we have everything you need to streamline your workflows and
-    achieve high productivity.
+  <p class="mt-4 text-center text-lg text-slate-600 [text-wrap:pretty]">
+    Since 1981, The Yarraville Festival has been an integral Westside tradition,
+    uniting the Inner West community to foster pride and inclusiveness. This
+    annual event blends creative artists, designers, artisan stalls, activities,
+    and gourmet delights, creating a vibrant community spirit and boosting the
+    local economy. Join us for a high-quality family experience featuring
+    excellent food, entertainment, and stalls with quality products. Our vision
+    is to be a renowned Inner West Community festival, celebrated for community
+    participation and a unique village atmosphere. Come be part of the cultural
+    diversity, industrious nature, and artistic vibe that defines the West!
   </p>
 </div>
 
-<div class="grid md:grid-cols-2 py-10">
+<!-- <div class="grid md:grid-cols-2 py-10">
   <div class="grid place-items-center">
     <Picture
       src={FeatureImg1}
@@ -90,9 +95,9 @@ const { nomargin } = Astro.props;
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
-<div class="grid md:grid-cols-2 py-10">
+<!-- <div class="grid md:grid-cols-2 py-10">
   <div class="grid place-items-center pb-10 md:pb-0 md:order-2">
     <Picture
       src={FeatureImg2}
@@ -152,4 +157,4 @@ const { nomargin } = Astro.props;
       </div>
     </div>
   </div>
-</div>
+</div> -->

@@ -1,0 +1,32 @@
+---
+import { getCollection } from "astro:content";
+import Container from "@components/container.astro";
+// import Cta from "@components/cta.astro";
+import FeatureAlt from "@components/feature-alt.astro";
+import FeatureGrid from "@components/feature-grid.astro";
+import Stalls from "@components/stalls.astro";
+import Logos from "@components/logos.astro";
+import Sectionhead from "@components/sectionhead.astro";
+// import Testimonials from "@components/testimonials.astro";
+import Link from "@components/ui/link.astro";
+import Layout from "@layouts/Layout.astro";
+
+import { Picture } from "astro:assets";
+import FestMap from "../assets/images/2024-yarraville-festival-map.png";
+---
+
+<Layout title="Stall Holders" footerMargin={false}>
+  <Container class="mt-16">
+    <Sectionhead>
+      <Fragment slot="badge">What's On</Fragment>
+      <Fragment slot="title">Festival Map</Fragment>
+      <Fragment slot="desc">
+        <Picture src={FestMap} alt="Festival Map" formats={["avif", "webp"]} />
+      </Fragment>
+    </Sectionhead>
+  </Container>
+
+  <!-- <FeatureAlt nomargin={true} />
+    <FeatureGrid />
+    <Stalls /> -->
+</Layout>

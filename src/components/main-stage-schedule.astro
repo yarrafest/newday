@@ -1,0 +1,12 @@
+---
+import { Picture, Image } from "astro:assets";
+import MainSched from "../assets/images/main-stage/mains-stage-schedule.jpg";
+---
+
+<Picture
+  src={MainSched}
+  alt="Community Stage Schedule"
+  formats={["avif", "webp"]}
+  class="h-full w-full object-contain"
+  loading="lazy"
+/>

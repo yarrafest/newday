@@ -1,0 +1,53 @@
+---
+import { Picture, Image } from "astro:assets";
+import Container from "@components/container.astro";
+import Card from "@components/card.astro";
+// import Cta from "@components/cta.astro";
+// import FeatureAlt from "@components/feature-alt.astro";
+// import FeatureGrid from "@components/feature-grid.astro";
+// import Stalls from "@components/stalls.astro";
+// import Footer from "@components/footer.astro";
+import Hero from "@components/hero.astro";
+// import Logos from "@components/logos.astro";
+// import Testimonials from "@components/testimonials.astro";
+// import Freeza from "@components/mainstage-freeza.astro";
+// import GenEnt from "@components/entertainment-cards.astro";
+
+import Layout from "@layouts/Layout.astro";
+// import WhatsOnListings from "@components/whats-on-listings.astro";
+
+import CommSched from "../assets/images/community-stage/community-stage-schedule.jpg";
+import MainSched from "../assets/images/main-stage/main-stage-schedule.jpg";
+---
+
+<Container>
+  <div class="mt-10 grid gap-10 md:grid-cols-1 lg:grid-cols-2">
+    <Card color="indigo" size="sm">
+      <Fragment slot="image">
+        <Picture
+          src={CommSched}
+          alt="Community Stage Schedule"
+          formats={["avif", "webp"]}
+          class="h-full w-full object-contain"
+          loading="lazy"
+          width="500"
+          height="500"
+        />
+      </Fragment>
+    </Card>
+
+    <Card>
+      <Fragment slot="image">
+        <Picture
+          src={MainSched}
+          alt="Community Stage Schedule"
+          formats={["avif", "webp"]}
+          class="h-full w-full object-contain"
+          loading="lazy"
+          width="500"
+          height="500"
+        />
+      </Fragment>
+    </Card>
+  </div>
+</Container>

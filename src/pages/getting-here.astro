@@ -1,0 +1,26 @@
+---
+// import { getCollection } from "astro:content";
+// import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+// import Link from "@components/ui/link.astro";
+// import EmployeeImg from "../assets/employee.jpg";
+// import Logos from "@components/logos.astro";
+import { Icon } from "astro-icon/components";
+// import Cta from "@components/cta.astro";
+---
+
+<Layout title="About" footerMargin={false}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="badge">Activities</Fragment>
+      <Fragment slot="title">Getting here</Fragment>
+      <Fragment slot="desc">
+        Catch a Train! As parking is limited we strongly suggest you walk, ride
+        or catch public transport. If you must drive, consider gettingh a Taxi
+        or Uber and get dropped off a short distance from the Village.
+      </Fragment>
+    </Sectionhead>
+  </Container>
+</Layout>

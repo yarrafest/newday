@@ -1,0 +1,77 @@
+---
+import { Picture, Image } from "astro:assets";
+import Container from "@components/container.astro";
+import Cta from "@components/cta.astro";
+import FeatureAlt from "@components/feature-alt.astro";
+// import FeatureGrid from "@components/feature-grid.astro";
+import Stalls from "@components/stalls.astro";
+// import Footer from "@components/footer.astro";
+import Hero from "@components/hero.astro";
+import Logos from "@components/logos.astro";
+import Testimonials from "@components/testimonials.astro";
+import Freeza from "@components/mainstage-freeza.astro";
+import GenEnt from "@components/entertainment-cards.astro";
+
+import Layout from "@layouts/Layout.astro";
+import WhatsOnListings from "@components/whats-on-listings.astro";
+
+import StageSched from "@components/stage-schedule.astro";
+---
+
+<Layout footerMargin={false}>
+  <StageSched />
+
+  <Container>
+    <h2>Kindred Main Stage supported by Songlines:</h2>
+
+    <p>
+      This year’s Yarraville Festival Main Stage is proudly programmed by
+      Kindred Studios in collaboration with Songlines Aboriginal Music and
+      Freeza Youth Services.
+    </p>
+    <p>
+      Music will kick off from 10am with Ed Moon, Chief Tebir and MS NIASHA. A
+      wonderful array of acts curated by Freeza.
+    </p>
+    <p>
+      From midday, the Kindred Main Stage is a back-to-back line up of some of
+      Melbourne’s best artists, such as Kee’ahn, Nikodimos & The Free Speakers,
+      Ray Pereira, Ras Jahknow, Pretty Moi, Annaliese Rose, The Thirst Trap &
+      more!
+    </p>
+    <p>
+      Can’t wait to see you on the dance floor on Sunday, 10th March. Kindred
+      Main Stage located at the rear of the Sun Theatre on Canterbury Street.
+    </p>
+    <!-- <ul>
+      <li>10:00am - 10:15am MS Niasha Welcome and Youth services speech</li>
+      <li>10:15am - 10:30am Ed Moon (Freeza)</li>
+      <li>10:40am - 11:00am Chief Tebir (Freeza)</li>
+      <li>10:15am - 10:30am Ed Moon (Freeza)</li>
+      <li>11:10am - 11:40am MS NIASHA (Freeza)</li>
+      <li>11:40am - 12:00pm Annaliese Rose setup/soundcheck</li>
+      <li>
+        11:45am - 11:50am President Yarraville Festival Committee Introduces
+        Deputy Mayor
+      </li>
+      <li>11:50am - 11:55am Speech: Deputy Mayor, Cr Michael Clarke</li>
+      <li>
+        11:55am - 12:00pm Speech: Con Frescos, President Yarraville Festival
+        Committee
+      </li>
+      <li>12:00pm - 12:30pm Annaliese Rose</li>
+      <li>12:45pm - 1:15pm The Thirst Trap</li>
+      <li>1:30pm - 2:00pm Mae Mobly</li>
+      <li>2:15pm - 3:00pm Ray Pereira & Julien Wilson</li>
+      <li>3:15pm - 4:00pm Nikodimos & The Free Speakers</li>
+      <li>4:15pm - 5:00pm Kee’ahn</li>
+      <li>5:20pm - 6:05pm Ras Jahknow</li>
+      <li>6:20pm - 7:10pm Pretty Moi</li>
+      <li>7:30pm Finish</li>
+    </ul> -->
+
+    <Freeza />
+
+    <GenEnt />
+  </Container>
+</Layout>

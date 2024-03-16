@@ -1,0 +1,43 @@
+---
+// import { getCollection } from "astro:content";
+import { Picture } from "astro:assets";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+// import Link from "@components/ui/link.astro";
+// import EmployeeImg from "../assets/employee.jpg";
+// import Logos from "@components/logos.astro";
+import { Icon } from "astro-icon/components";
+// import Cta from "@components/cta.astro";
+import myImage from "../../assets/images/dog-show_1.jpg";
+---
+
+<Layout title="About" footerMargin={false}>
+  <Container>
+    <Sectionhead>
+      <Fragment slot="badge">Activities</Fragment>
+      <Fragment slot="title">Dog Parade</Fragment>
+      <Fragment slot="desc">
+        Our Yarraville Community has a huge variety of family members that come
+        on all fours. Does your fur friend have a fancy dress costume or know a
+        few cool tricks? It’s time for them to strut their stuff on the cat–
+        dogwalk! The Yarraville Festival Annual Dog Parade will be on the
+        Yarraville Festival Main Stage. Come on down and see dogs of all shapes
+        and sizes strutting their stuff – will you be able to pick the best in
+        show? The Parade is both a dress up and a dog trick parade with a prize
+        for the best act/outfit! Places in the Dog Parade are available on a
+        first-come-first-serve basis. Submit your applications by filling out
+        the form below and clicking submit. There are 30 places available for
+        the Dog Parade! Due to the nature of the event, the parade will be
+        unable to cater for walk-ins.
+      </Fragment>
+    </Sectionhead>
+
+    <Picture
+      src={myImage}
+      alt="A bird sitting on a nest of eggs."
+      src={myImage}
+      formats={["avif", "webp"]}
+    />
+  </Container>
+</Layout>
