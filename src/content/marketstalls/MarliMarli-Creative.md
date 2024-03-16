@@ -1,10 +1,10 @@
 ---
 draft: false
-title: "Eat Enjera"
+title: "MarliMarli Creative"
 snippet: "Ornare cum cursus laoreet sagittis nunc fusce posuere per euismod dis vehicula a, semper fames lacus maecenas dictumst pulvinar neque enim non potenti. Torquent hac sociosqu eleifend potenti."
 image:
   {
-    src: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/340848233_1294410724806023_7061645041642549090_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=_eQN4Ymy3LgAX83ufC6&_nc_ht=scontent-mrs2-2.xx&oh=00_AfCkiocYzSsr5gQbhihMg24DU2zuOL8pvWkM8aMsvoCvfQ&oe=65FA91F1",
+    src: "https://scontent-mrs2-2.xx.fbcdn.net/v/t39.30808-6/423584229_693163646315108_6674747993252189312_n.jpg?stp=cp6_dst-jpg_fr_q85&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=NUAVv8TsxA0AX-uGTqj&_nc_ht=scontent-mrs2-2.xx&oh=00_AfBEjR5PU4UQtoao8_YYS41v2RiDfd1dhTzvXRke1rzPlQ&oe=65FAA522",
     alt: "alt text",
   }
 publishDate: "2022-11-09 16:39"
@@ -13,12 +13,13 @@ author: "Marcell Ziemann"
 tags: [webdev, tailwindcss, frontend]
 ---
 
-**Vegan Ethiopian food truck.
-Enjera is a type of flatbread that is a staple food in Ethiopia and Eritrea.**
+**The word “MarliMarli” meaning ‘Butterfly’ in Wagiman language is named in honour of our late Grandmother, Lizzy Von Roehl who we lost in 2008 to a long battle with cancer.**
 
-It is traditionally made from teff flour, a gluten-free grain that is native to these regions, and is known for its spongy texture and slightly sour taste. It can also be made using other types of grains.
-To make enjera, teff flour is mixed with water and left to ferment for a period of time, typically between 1 and 3 days. During this time, natural bacteria in the air and on the teff flour begin to break down the sugars and create gas, which causes the batter to rise and ferment.
-The batter is then poured onto a large, hot, circular griddle called a mitad or a mogogo, where it is cooked until the surface is covered in small holes and the edges are crispy. The enjera is then removed from the griddle and stacked, ready to be served with a variety of stews, curries, and other dishes.
-Enjera is often used as both a utensil and a plate, with diners using torn pieces of the bread to scoop up the other foods on their plate. It is also commonly eaten on its own, as a snack or breakfast food.
+When Nan passed our little sister, Elisa, was 2 years old and any time she would see a passing butterfly she would point and say “Oh Hello Nanny…Nanny’s butterfly”.
+We noticed butterflies around us whenever we felt her presence after her passing, so we believed this was her way of telling us she was still with us
+Our nan was a gorgeous and talented artist in her own right and found comfort during her tough battle with cancer in creating pieces she sold, exhibited and gifted to her nearest and dearest.
+Nan shared her love of art with her daughter, our mum, and with us kids.
+Tara then decided to use this medium also as a tool for healing and self expression, naming herself as an independent artist ‘MarliMarli’ in honour of her greatest art teacher
+Over the past 5-6 years, MarliMarli was used as Tara’s artist name while she produced, exhibited and sold her original artworks, prints and digital artworks online, through commissions, market stalls and art galleries.
 
-https://www.instagram.com/enjeramelb/
+https://marlimarlicreative.com.au/about-us
