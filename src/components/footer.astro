@@ -10,17 +10,17 @@ const { margin } = Astro.props;
 const footermenu = {
   company: [
     {
-      title: "About",
-      path: "/about",
+      title: "Home",
+      path: "/",
     },
-    {
-      title: "Volunteers",
-      path: "/volunteers",
-    },
-    {
-      title: "Blog",
-      path: "/blog",
-    },
+    // {
+    //   title: "Volunteers",
+    //   path: "/volunteers",
+    // },
+    // {
+    //   title: "Blog",
+    //   path: "/blog",
+    // },
     {
       title: "Contact",
       path: "/contact",
@@ -28,21 +28,21 @@ const footermenu = {
   ],
   product: [
     {
-      title: "For Startups",
-      path: "#",
+      title: "Sponsors",
+      path: "/sponsors",
     },
     {
-      title: "Features",
-      path: "#",
+      title: "Market Stalls",
+      path: "/market-stalls/",
     },
     {
-      title: "Pricing",
-      path: "/pricing",
+      title: "Food & Beverage",
+      path: "/food-beverage/",
     },
-    {
-      title: "Integrations",
-      path: "#",
-    },
+    // {
+    //   title: "Integrations",
+    //   path: "#",
+    // },
   ],
   resources: [
     {
@@ -144,7 +144,7 @@ const footermenu = {
         </div>
       </div>
       <div>
-        <h3 class="text-sm font-medium text-slate-800">Product</h3>
+        <h3 class="text-sm font-medium text-slate-800">Partners</h3>
         <div class="mt-3 flex flex-col">
           {
             footermenu.product.map((item) => (
