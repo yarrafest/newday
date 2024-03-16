@@ -1,5 +1,6 @@
 ---
 import Container from "@components/container.astro";
+import { Picture, Image } from "astro:assets";
 // import Cta from "@components/cta.astro";
 import FeatureAlt from "@components/feature-alt.astro";
 import MainstageGrid from "@components/mainstage-grid.astro";
@@ -10,6 +11,7 @@ import Testimonials from "@components/testimonials.astro";
 import Link from "@components/ui/link.astro";
 import Layout from "@layouts/Layout.astro";
 import Freeza from "@components/mainstage-freeza.astro";
+import MainSched from "../../assets/images/main-stage/main-stage-schedule.jpg";
 ---
 
 <Layout footerMargin={false}>
@@ -29,6 +31,19 @@ import Freeza from "@components/mainstage-freeza.astro";
         Music will kick off from 10am with Ed Moon, Chief Tebir and MS NIASHA. A
         wonderful array of acts curated by Freeza.
       </p>
+
+      <Sectionhead>
+        <Fragment slot="title">10AM - 7:30PM</Fragment>
+        <Fragment slot="desc">
+          <Picture
+            src={MainSched}
+            alt="Main Stage Schedule"
+            formats={["avif", "webp"]}
+            class="h-full w-full object-contain"
+            loading="lazy"
+          />
+        </Fragment>
+      </Sectionhead>
     </div>
 
     <MainstageGrid />
